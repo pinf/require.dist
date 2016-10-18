@@ -1,0 +1,9 @@
+{
+    "name": "require.dist",
+    "version": "0.1.0",
+    "publish": true,
+    "main": "require.dist.js",
+    "scripts": {
+        "test": "node test.js"
+    }
+}
