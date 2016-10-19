@@ -1,7 +1,7 @@
 require.dist
 =============
 
-[![Build Status](https://secure.travis-ci.org/pinf/require.dist.png)](https://travis-ci.org/pinf/require.dist)
+[![Build Status](https://circleci.com/gh/pinf/require.dist.svg?style=svg)](https://circleci.com/gh/pinf/require.dist)
 
 `require.dist` provides a mechanism to inline an asset within a module by embedding
 the asset itself or a reference to it for on-demand loading at runtime.
