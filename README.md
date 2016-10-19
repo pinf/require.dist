@@ -9,11 +9,12 @@ the asset itself or a reference to it for on-demand loading at runtime.
 API
 ---
 
-```
-require.dist(id [, mappings])
-```
+### `require.dist(id [, mappings])`
+
   * `id` - A CommonJS/NodeJS style module ID
   * `mappings` - Optional alias to URI mappings to resolve aliased module IDs
+
+Returns a *function* which when invoked returns a *Promise* for the asset.
 
 
 Install
@@ -49,7 +50,7 @@ See `./UseCases` for more examples and `./Adapters` on how to replace
 `require.dist` calls at source code bundling time using various
 build frameworks.
 
-To make `require.dist` available in NodeJS directly use:
+To make `require.dist` available in NodeJS directly, use:
 ```
 require("require.dist")(require);
 ```
