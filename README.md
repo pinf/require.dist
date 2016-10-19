@@ -33,8 +33,8 @@ exports.name = "Component";
     });
 ```
 
-`ComponentReference` will either return embedded asset or load asset based
-on embedded reference depending on which mode the source code was built in.
+`ComponentReference` will either return the embedded asset or load the asset based
+on an embedded reference depending on which mode the source code was built in.
 
 For more examples see `./UseCases`.
 
