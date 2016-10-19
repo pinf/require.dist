@@ -6,6 +6,15 @@ require.dist
 `require.dist` provides a mechanism to inline an asset within a module by embedding
 the asset itself or a reference to it for on-demand loading at runtime.
 
+API
+---
+
+```
+require.dist(id [, mappings])
+```
+  * `id` - A CommonJS/NodeJS style module ID
+  * `mappings` - Optional alias to URI mappings to resolve aliased module IDs
+
 
 Install
 -------
@@ -36,7 +45,14 @@ exports.name = "Component";
 `ComponentReference` will either return the embedded asset or load the asset based
 on an embedded reference depending on which mode the source code was built in.
 
-For more examples see `./UseCases`.
+See `./UseCases` for more examples and `./Adapters` on how to replace
+`require.dist` calls at source code bundling time using various
+build frameworks.
+
+To make `require.dist` available in NodeJS directly use:
+```
+require("require.dist")(require);
+```
 
 
 Provenance
